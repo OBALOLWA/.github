@@ -85,7 +85,7 @@ def tweet_about_space(space: dict):
     title = space.get("title", "<no-title>")
     space_id = space.get("id")
     hosts = space.get("host_ids", [])
-    tweet_text = f"🔊 Live now: \"{title}\" — join here: https://twitter.com/i/spaces/{space_id}"
+    tweet_text = f"🔊 Live now: \"{title}\" — join here: https://twitter.com/i/spaceshttps://x.com/i/spaces/1rmxPvlobRLGN}"
     try:
         resp = client_write.create_tweet(text=tweet_text)
         logger.info("Tweeted: %s", resp)
