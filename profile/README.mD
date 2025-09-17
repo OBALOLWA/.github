@@ -21,8 +21,8 @@ logger = logging.getLogger(__name__)
 # CONFIG: keywords to watch for in space titles (case-insensitive)
 WATCH_KEYWORDS = ["web3", "blockchain", "sui", "productivity"]
 
-# Poll interval (seconds)
-POLL_INTERVAL = 45
+# Poll interval (hours)
+POLL_INTERVAL = 2
 
 # Environment credentials
 BEARER_TOKEN = os.getenv("X_BEARER_TOKEN")  # read only -> spaces lookup/search
